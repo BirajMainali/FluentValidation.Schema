@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidation.Schema.Console", "FluentValidation.Schema.Console\FluentValidation.Schema.Console.csproj", "{AD05711E-7BED-4EE9-86D5-8EBD098EDA3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidation.Schema", "FluentValidation.Schema\FluentValidation.Schema.csproj", "{5A180DA7-7C13-4511-921D-F2A3BED87CA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD05711E-7BED-4EE9-86D5-8EBD098EDA3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD05711E-7BED-4EE9-86D5-8EBD098EDA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD05711E-7BED-4EE9-86D5-8EBD098EDA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD05711E-7BED-4EE9-86D5-8EBD098EDA3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A180DA7-7C13-4511-921D-F2A3BED87CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A180DA7-7C13-4511-921D-F2A3BED87CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A180DA7-7C13-4511-921D-F2A3BED87CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A180DA7-7C13-4511-921D-F2A3BED87CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
