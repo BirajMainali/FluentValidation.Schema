@@ -2,6 +2,10 @@
 
 **FluentValidation.Schema** generates JSON schemas from FluentValidation rules, ensuring consistent validation on both client- and server-side. Highly customizable and extensible, it bridges the gap between backend and frontend validation logic. For more on FluentValidation, see [FluentValidation.net](https://fluentvalidation.net/).
 
+Source Code: https://github.com/BirajMainali/FluentValidation.Schema/tree/master/FluentValidation.Schema
+
+Example: https://github.com/BirajMainali/FluentValidation.Schema/tree/master/FluentValidation.Schema.Console
+
 ---
 
 ## Features
