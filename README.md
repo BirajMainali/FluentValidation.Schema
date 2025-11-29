@@ -1,6 +1,6 @@
 # FluentValidation.Schema
 
-**FluentValidation.Schema** generates JSON schemas from FluentValidation rules, ensuring consistent validation on both client- and server-side. Highly customizable and extensible, it bridges the gap between backend and frontend validation logic.
+**FluentValidation.Schema** generates JSON schemas from FluentValidation rules, ensuring consistent validation on both client- and server-side. Highly customizable and extensible, it bridges the gap between backend and frontend validation logic. For more on FluentValidation, see [FluentValidation.net](https://fluentvalidation.net/).
 
 ---
 
@@ -82,33 +82,7 @@ var validator = new CustomerValidator();
 Console.WriteLine(validator.GetJsonSchema());
 ```
 
----
-
-## Supported Converters
-
-The library supports the following FluentValidation converters out-of-the-box:
-
-* EmailValidatorSchemaConverter
-* ExactLengthValidatorSchemaConverter
-* InclusiveBetweenValidatorSchemaConverter
-* LengthValidatorSchemaConverter
-* MaximumLengthValidatorSchemaConverter
-* MinimumLengthValidatorSchemaConverter
-* NotEmptyValidatorSchemaConverter
-* NotNullValidationSchemaConverter
-* RegularExpressionValidatorSchemaConverter
-* EqualValidatorSchemaConverter
-* NotEqualValidatorSchemaConverter
-* LessThanValidatorSchemaConverter
-* GreaterThanValidatorSchemaConverter
-* GreaterThanOrEqualValidatorSchemaConverter
-* LessThanOrEqualValidatorSchemaConverter
-
-Custom converters can also be added for more complex scenarios.
-
----
-
-## Sample Output
+#### Example Output
 
 ```json
 {
@@ -157,7 +131,34 @@ Custom converters can also be added for more complex scenarios.
     }
   ]
 }
+
 ```
+
+---
+
+## Supported Converters
+
+The library supports these FluentValidation converters out-of-the-box:
+
+* EmailValidatorSchemaConverter
+* ExactLengthValidatorSchemaConverter
+* InclusiveBetweenValidatorSchemaConverter
+* LengthValidatorSchemaConverter
+* MaximumLengthValidatorSchemaConverter
+* MinimumLengthValidatorSchemaConverter
+* NotEmptyValidatorSchemaConverter
+* NotNullValidationSchemaConverter
+* RegularExpressionValidatorSchemaConverter
+* EqualValidatorSchemaConverter
+* NotEqualValidatorSchemaConverter
+* LessThanValidatorSchemaConverter
+* GreaterThanValidatorSchemaConverter
+* GreaterThanOrEqualValidatorSchemaConverter
+* LessThanOrEqualValidatorSchemaConverter
+
+**Important:** Supported converters **only convert rules to JSON schema**. They do **not execute validation** at runtime. They are purely for generating a consistent representation of your FluentValidation rules for use in clients, documentation, or API consumers.
+
+Custom converters can also be added for more complex scenarios. Example implementation can be found [here](https://github.com/BirajMainali/FluentValidation.Schema/blob/master/FluentValidation.Schema.Console/YourAbstractionValidator.cs).
 
 ---
 
