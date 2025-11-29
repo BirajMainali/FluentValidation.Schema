@@ -23,13 +23,13 @@ Example: https://github.com/BirajMainali/FluentValidation.Schema/tree/master/Flu
 Using .NET CLI:
 
 ```bash
-dotnet add package FluentValidation.Schema
+dotnet add package Extensions.FluentValidation.Schema
 ```
 
 Or via NuGet Package Manager:
 
 ```
-Install-Package FluentValidation.Schema
+Install-Package Extensions.FluentValidation.Schema
 ```
 
 ---
