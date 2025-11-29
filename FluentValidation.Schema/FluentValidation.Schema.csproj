@@ -3,15 +3,23 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        
         <Nullable>enable</Nullable>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+        <PackageId>FluentValidation.Schema</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Biraj Mainali</Authors>
+        <Company>Biraj Mainali</Company>
+        <Description>FluentValidation.Schema generates JSON schemas from FluentValidation rules, ensuring consistent client- and server-side validation. Highly customizable for any use case.</Description>
+        <PackageTags>utilities;fluentvalidation;validation;json-schema</PackageTags>
+        <RepositoryUrl>https://github.com/BirajMainali/FluentValidation.Schema</RepositoryUrl>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="FluentValidation" Version="12.1.0" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0" />
-      <PackageReference Include="Scrutor" Version="7.0.0" />
+        <PackageReference Include="FluentValidation" Version="12.1.0"/>
     </ItemGroup>
 
 </Project>

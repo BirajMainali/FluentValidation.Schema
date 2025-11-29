@@ -16,7 +16,7 @@ public class CustomAbstractionValidator<T> : AbstractValidator<T>
     /// <summary>
     /// Collection of converters used to transform FluentValidation rules into schema results.
     /// </summary>
-    private readonly List<IFluentValidatorConverter> _converters = new();
+    protected readonly List<IFluentValidatorConverter> Converters = new();
 
     /// <summary>
     /// Initializes a new instance of the <see cref="CustomAbstractionValidator{T}"/> class
@@ -24,7 +24,7 @@ public class CustomAbstractionValidator<T> : AbstractValidator<T>
     /// </summary>
     protected CustomAbstractionValidator()
     {
-        _converters.AddRange(new IFluentValidatorConverter[]
+        Converters.AddRange(new IFluentValidatorConverter[]
         {
             new EmailValidatorSchemaConverter(),
             new ExactLengthValidatorSchemaConverter(),
@@ -119,7 +119,7 @@ public class CustomAbstractionValidator<T> : AbstractValidator<T>
 
             foreach (var component in rule.Components)
             {
-                var converter = _converters.FirstOrDefault(x => x.Name == component.Validator.Name);
+                var converter = Converters.FirstOrDefault(x => x.Name == component.Validator.Name);
 
                 if (converter == null)
                 {
